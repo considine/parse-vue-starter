@@ -14,7 +14,14 @@
 <body>
 
   <div id="app">
-    <home-component></home-component>
+    <p>
+      <!-- use router-link component for navigation. -->
+      <!-- specify the link by passing the `to` prop. -->
+      <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
+      <router-link to="/login">Go to Login</router-link>
+      <router-link to="/">Go Home</router-link>
+    </p>
+    <router-view></router-view>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
